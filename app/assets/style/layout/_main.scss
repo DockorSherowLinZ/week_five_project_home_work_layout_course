@@ -1,0 +1,90 @@
+$aside-w:296px;
+$aside-up-h: 4rem;            // 本身高度 + padding
+$aside-user-h: calc(2rem + 45px); // 本身高度 + padding
+$main-updown-h: 120px/*標題*/ + 64px/*下方padding*/;
+
+body {
+  font-family: 'Roboto', 'Lora', serif, sans-serif;
+}
+
+
+// 側邊攔
+.aside-bar {
+  position: fixed;
+  top: 0;left: 0;
+  width: $aside-w;
+  height: 100vh;
+  user-select: none;
+  .logo{
+    width: 140px;
+    height: 40px;
+    object-fit: cover;
+  }
+  .nav-wrap {
+    width: 100%;
+    height: calc(100% - #{$aside-up-h} - #{$aside-user-h});
+    overflow: auto;
+    // padding-bottom: 72px;
+  }
+  .nav-item.active, .nav-item:hover{
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -1.5rem;
+      top: calc(50% - 1rem);
+      height: 2rem;
+      width: 4px;
+      background: $primary;
+    }
+    .nav-link {
+      color: $primary !important;
+    }
+  }
+}
+
+// 頭像 + 名字 + 副標
+.user img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.user .text {
+  font-size: 0.875em;
+}
+.subtitle {
+  font-size: 0.875rem;
+  color: $gray-600;
+}
+
+
+// 主要頁面
+.main-container {
+  margin-left: $aside-w;
+}
+
+
+// 蓋掉BS樣式
+
+small, .small {
+  font-size: 12px ;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+code {
+  font-size: 16px;
+  margin: 0.25rem;
+  background: lighten($teal, 50%);
+  color: $primary;
+}
+
+.list-group-item.active {
+  z-index: initial;
+  color: $dark;
+  background-color: $light;
+  border-color: $gray-400;
+  cursor: default;
+}

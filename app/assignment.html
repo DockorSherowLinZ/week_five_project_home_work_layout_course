@@ -1,0 +1,193 @@
+---
+title: 後台
+layout: ./app/layout.ejs
+engine: ejs
+current: assignment
+---
+
+<!-- 標題列 -->
+<div class="header d-flex align-items-center justify-content-between p-5 pb-6 position-sticky top-0 bg-white" style="z-index: 1;">
+  <div class="d-inline-flex align-items-center">
+    <h1 class="fs-4 d-inline-block text-capitalize me-7 mb-0">assignment</h1>
+    <div class="nav-item dropdown d-inline-block">
+      <a class="nav-link dropdown-toggle text-dark d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        All Courses<i class="material-icons ms-2 text-primary"> expand_more </i>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="javascript:void(0)">你在期待什麼</a></li>
+        <li><a class="dropdown-item" href="javascript:void(0)">這裡面什麼都沒有</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="javascript:void(0)">😏😏😏😏😏</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="btns">
+    <button class="btn lh-1 me-4"><i class="material-icons"> search </i></button>
+    <button class="btn lh-1"><i class="material-icons">notifications_active</i></button>
+  </div>
+</div>
+
+
+<!-- 主要的東西 -->
+<div class="main-sub-content container-fluid p-0 px-5">
+  <div class="d-flex flex-column">
+    <!-- 上標 -->
+    <section class="wrap p-0 d-flex justify-content-between align-items-center  mb-2">
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark d-flex align-items-center p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          All <span>（</span> <em class="fst-normal">4</em> <span>）</span><i class="material-icons ms-2 text-primary"> expand_more </i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="javascript:void(0)">你在期待什麼</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">這裡面什麼都沒有</a></li>
+        </ul>
+      </div>
+      <small class="">2 comments</small>
+    </section>
+
+
+    <!-- 中內容 -->
+    <section class="d-flex">
+      <!-- 左側 -->
+      <div class="lists-wrap wrap p-0 me-4">
+        <div class="list-group">
+          <a href="javascript:void(0)" class="list-group-item list-group-item-action active" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <small class="mb-1">Chapter Assignment 2</small>
+              <small>4 hrs ago</small>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <p class="mb-1 fw-bolder title">Please check this file…</p>
+              <small class="text-gray text-nowrap">Emily Wang</small>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="list-group-item list-group-item-action" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <small class="mb-1">Chapter Assignment 1</small>
+              <small>12 hrs ago</small>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <p class="mb-1 fw-bolder title">My Homework</p>
+              <small class="text-gray text-nowrap">David Xu</small>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="list-group-item list-group-item-action" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <small class="mb-1">Final Assignment</small>
+              <small>18 hrs ago</small>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <p class="mb-1 fw-bolder title">Have a problem with this…</p>
+              <small class="text-gray text-nowrap">Tony Wei</small>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="list-group-item list-group-item-action" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <small class="mb-1">Final Assignment</small>
+              <small>19 hrs ago</small>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <p class="mb-1 fw-bolder title">Did I do it right?</p>
+              <small class="text-gray text-nowrap">Christina Lin</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      <!-- 右側 -->
+      <div class="lists-wrap wrap p-0 flex-fill h-100">
+        <div class="card h-100 border-0 position-relative">
+          <div class="card-header d-flex justify-content-between align-items-center border">
+            <div class="">
+              <p class="small mb-1">Chapter Assignment 2 / HTML&CSS</p>
+              <p class="m-0 fw-bolder title">Please check this file for me, thanks!</p>
+            </div>
+            <button class="btn lh-1 p-0"><i class="material-icons"> more_vert </i></button>
+          </div>
+          <div class="card-body overflow-auto  pe-6 border border-top-0 border-bottom-0">
+            <div class="wrap p-0">
+              <div class="user mb-4">
+                <div class="d-flex align-items-center">
+                  <div class="user-img p-0 me-4">
+                    <img class="rounded-circle" src="./assets/images/user02.jpg">
+                  </div>
+                  <div class="user-content">
+                    <p class="m-0 text-dark">Emily Wang</p>
+                    <p class="m-0 subtitle">10:38 AM (4 hours ago)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content ms-9 ">
+                <p class="mb-4">
+                  Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>
+                  What is the gap or extra space below image?
+                </p>
+                <button class="attach-btn btn bg-light mb-4 d-flex align-items-center"><i class="material-icons lh-1 me-2"> attach_file </i>HW-2-David.zip</button>
+                <hr>
+              </div>
+            </div>
+            
+
+            <div class="wrap p-0">
+              <div class="user mb-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <div class="user-img p-0 me-4">
+                      <img class="rounded-circle" src="./assets/images/user01.jpg">
+                    </div>
+                    <div class="user-content">
+                      <p class="m-0 text-dark">Andy Chen <span>( You )</span></p>
+                      <p class="m-0 subtitle">13:24 AM (1 hours ago)</p>
+                    </div>
+                  </div>
+                  <div class="ctrls">
+                    <button class="btn lh-1 p-0 me-5"><i class="material-icons"> star_border </i></button>
+                    <button class="btn lh-1 p-0"><i class="material-icons"> edit </i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="content ms-9 ">
+                <p class="m-0">
+                  Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br>  <br>You can:  <br> <br>
+                  <ul>
+                    <li>adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the <code>middle</code> ) or</li>
+                    <li>change the <code>display</code> so it isn’t inline.</li>
+                  </ul>
+                   
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="position-absolute bottom-0 end-0 h-0 w-100 ohmyeditor">
+            <textarea name="content" id="editor" placeholder="Reply an answer…"></textarea>
+            <div class="ctrls position-absolute bottom-0 end-0 me-6 mb-6">
+              <button class="py-2 px-6 me-4 btn btn-outline-primary" onclick="toggleEditor()">Cancel</button>
+              <button class="py-2 px-6 btn btn-primary">Reply</button>
+            </div>
+          </div>
+
+          <div class="card-footer text-muted p-0 bg-white ">
+            <div class="container-fluid p-0 main-down-h">
+              <div class="row justify-content-between h-100">
+                <div class="btns col p-0 d-flex align-items-center">
+                  <button class="btn lh-1"><i class="material-icons"> navigate_before </i></button>
+                  <button class="btn lh-1"><i class="material-icons"> navigate_next </i></button>
+                </div>
+                <div class="reply-btns col p-0 text-end d-flex align-items-center justify-content-end">
+                  <button class="py-2 px-6 me-4 btn btn-outline-primary">Mark as read</button>
+                  <button class="py-2 px-6 me-4 btn btn-primary" onclick="toggleEditor()">Reply</button>
+                </div>
+              </div>
+            </ㄎ>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+</div>
+
+
+
+<!-- 編輯 -->

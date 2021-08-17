@@ -1,0 +1,44 @@
+$left-w: 320px;
+// $main-down-h: 66px;
+$main-up-h: 100px;
+$main-down-h: $aside-user-h;
+.main-down-h{height:  $main-down-h;}
+
+.main-sub-content section:nth-of-type(2) {
+  height: calc(100vh - #{$main-up-h} - #{$aside-user-h} + 1.5rem);
+  overflow: hidden;
+  .lists-wrap {
+    flex-shrink: 0;
+    flex-grow: 1;
+    // overflow: auto
+  }
+}
+
+.list-group {
+  width: $left-w;
+  .title {
+    overflow: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.attach-btn {
+  border: 1px solid $gray-400;
+}
+
+hr {
+  background: $gray-400;
+  margin: 16px 0;
+}
+
+// 套件
+.ohmyeditor {
+  display: none;
+}
+.ohmyeditor.active {
+  display: initial;
+}
+div.ck-editor__editable {
+  min-height: 350px;
+}
