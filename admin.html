@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
+    <title>後台</title>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" /> -->
     <!-- google icon + font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
@@ -22,23 +22,23 @@
       <div class="logo px-5 mb-5 "><img src="./assets/images/logo.svg"></div>
       <div class="nav-wrap px-5">
         <ul class="nav flex-column">
-          <li class="nav-item <%= current == 'dashboard' ? 'active': '' %>"> 
-            <a class="nav-link  d-flex align-items-center px-0 py-4 <%= current == 'dashboard' ? 'text-primary': 'text-dark' %>" href="javascript:void(0)"><i class="material-icons me-4">insert_chart</i>Dashboard</a>
+          <li class="nav-item "> 
+            <a class="nav-link  d-flex align-items-center px-0 py-4 text-dark" href="javascript:void(0)"><i class="material-icons me-4">insert_chart</i>Dashboard</a>
           </li>
-          <li class="nav-item <%= current == 'question' ? 'active': '' %>">  
-            <a class="nav-link  d-flex align-items-center px-0 py-4 <%= current == 'question' ? 'text-primary': 'text-dark' %>" href="javascript:void(0)"><i class="material-icons me-4">forum</i>Question</a>
+          <li class="nav-item ">  
+            <a class="nav-link  d-flex align-items-center px-0 py-4 text-dark" href="javascript:void(0)"><i class="material-icons me-4">forum</i>Question</a>
           </li>
-          <li class="nav-item <%= current == 'assignment' ? 'active': '' %>">
-            <a class="nav-link  d-flex align-items-center px-0 py-4 <%= current == 'assignment' ? 'text-primary': 'text-dark' %>" href="./assignment.html"><i class="material-icons me-4"> assignment </i>Assignment</a>
+          <li class="nav-item ">
+            <a class="nav-link  d-flex align-items-center px-0 py-4 text-dark" href="./assignment.html"><i class="material-icons me-4"> assignment </i>Assignment</a>
           </li>
-          <li class="nav-item <%= current == 'course' ? 'active': '' %>">    
-            <a class="nav-link  d-flex align-items-center px-0 py-4 <%= current == 'course' ? 'text-primary': 'text-dark' %>" href="javascript:void(0)"><i class="material-icons me-4">video_library</i>Course</a>
+          <li class="nav-item ">    
+            <a class="nav-link  d-flex align-items-center px-0 py-4 text-dark" href="javascript:void(0)"><i class="material-icons me-4">video_library</i>Course</a>
           </li>
-          <li class="nav-item <%= current == 'admin' ? 'active': '' %>">     
-            <a class="nav-link  d-flex align-items-center px-0 py-4 <%= current == 'admin' ? 'text-primary': 'text-dark' %>" href="./admin.html"><i class="material-icons me-4">people</i>Admin</a>
+          <li class="nav-item active">     
+            <a class="nav-link  d-flex align-items-center px-0 py-4 text-primary" href="./admin.html"><i class="material-icons me-4">people</i>Admin</a>
           </li>
-          <li class="nav-item <%= current == 'settings' ? 'active': '' %>">  
-            <a class="nav-link  d-flex align-items-center px-0 py-4 <%= current == 'settings' ? 'text-primary': 'text-dark' %>" href="javascript:void(0)"><i class="material-icons me-4">settings</i>Settings</a>
+          <li class="nav-item ">  
+            <a class="nav-link  d-flex align-items-center px-0 py-4 text-dark" href="javascript:void(0)"><i class="material-icons me-4">settings</i>Settings</a>
           </li>
         </ul>
       </div>
@@ -57,7 +57,9 @@
 
     <main class="main-container">
       
-      <%- contents %>
+      
+
+
     </main>
 
     <!-- CKeditor套件 -->

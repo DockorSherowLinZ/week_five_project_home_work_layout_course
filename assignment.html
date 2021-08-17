@@ -1,10 +1,63 @@
----
-title: 後台
-layout: ./app/layout.ejs
-engine: ejs
-current: assignment
----
+<!DOCTYPE html>
+<html lang="zh">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>後台</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" /> -->
+    <!-- google icon + font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <aside class="aside-bar bg-light py-5">
+      <div class="logo px-5 mb-5 "><img src="./assets/images/logo.svg"></div>
+      <div class="nav-wrap px-5">
+        <ul class="nav flex-column">
+          <li class="nav-item "> 
+            <a class="nav-link  d-flex align-items-center px-0 py-4 text-dark" href="javascript:void(0)"><i class="material-icons me-4">insert_chart</i>Dashboard</a>
+          </li>
+          <li class="nav-item ">  
+            <a class="nav-link  d-flex align-items-center px-0 py-4 text-dark" href="javascript:void(0)"><i class="material-icons me-4">forum</i>Question</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link  d-flex align-items-center px-0 py-4 text-primary" href="./assignment.html"><i class="material-icons me-4"> assignment </i>Assignment</a>
+          </li>
+          <li class="nav-item ">    
+            <a class="nav-link  d-flex align-items-center px-0 py-4 text-dark" href="javascript:void(0)"><i class="material-icons me-4">video_library</i>Course</a>
+          </li>
+          <li class="nav-item ">     
+            <a class="nav-link  d-flex align-items-center px-0 py-4 text-dark" href="./admin.html"><i class="material-icons me-4">people</i>Admin</a>
+          </li>
+          <li class="nav-item ">  
+            <a class="nav-link  d-flex align-items-center px-0 py-4 text-dark" href="javascript:void(0)"><i class="material-icons me-4">settings</i>Settings</a>
+          </li>
+        </ul>
+      </div>
+      <div class="user pt-4 px-5 bg-light">
+        <div class="d-flex align-items-center">
+          <div class="user-img p-0 me-4">
+            <img class="rounded-circle" src="./assets/images/user01.jpg">
+          </div>
+          <div class="user-content">
+            <p class="m-0 text-dark">Andy Chen</p>
+            <p class="m-0 subtitle">andy0401@mail.com</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-container">
+      
+      
 <!-- 標題列 -->
 <div class="header d-flex align-items-center justify-content-between p-5 pb-6 position-sticky top-0 bg-white" style="z-index: 1;">
   <div class="d-inline-flex align-items-center">
@@ -191,3 +244,13 @@ current: assignment
 
 
 <!-- 編輯 -->
+
+    </main>
+
+    <!-- CKeditor套件 -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
